@@ -49,7 +49,7 @@ var vueInstance = new Vue({
     //--------------------------------------
 
     // lưu ý array
-    array: [1, 2, 4, 5, 6 ,7]
+    // array: [1, 2, 4, 5, 6 ,7]
   },
 
   methods: {
