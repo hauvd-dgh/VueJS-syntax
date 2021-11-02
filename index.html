@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VueJS Learning</title>
+  </head>
+  <body>
+
+    <!-- -------------------------------------------------------------------------------- -->
+    
+    <div id="app">
+      <!-- Data binding -->
+      <!-- <a v-bind:href="url" v-bind:target="target">{{ text }}</a>
+      <h1>{{ render() }}</h1> -->
+
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- Event -->
+      <!-- <h1>Number: {{ number }}</h1>
+      <button v-on:click="handleOnClick($event, 3)">Increase</button> -->
+      
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- Computed -->
+      <!-- <button v-on:click="a++">A = A + 1</button>
+      <button v-on:click="b++">B = B + 1</button>
+      <p>A = {{ increaseA }}</p>
+      <p>A = {{ increaseB }}</p> -->
+      
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- bind 2 chiều -->
+      <!-- <h1>Value: {{ text }}</h1>
+      <input v-on:keyup="handleOnChange" type="text" />
+      <input v-model="text" type="text" /> -->
+      
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- Class -->
+      <!-- <div
+        class="main-class"
+        v-bind:class="{ class_01: false, class_02: true }"
+      ></div> -->
+
+      <!-- --------------------------------------------------------------------- -->
+      
+      <!-- Style -->
+      <!-- <div v-bind:style="obj"></div> -->
+      
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- Conditional -->
+      <!-- <h1 v-if="value === 10">đúng rồi á</h1>
+      <h1 v-else-if="value < 10">gần đúng rồi á</h1>
+      <h1 v-else="value > 10">sai rồi á</h1> -->
+      
+      <!-- --------------------------------------------------------------------- -->
+      
+      <!-- List -->
+      <!-- <div v-for="(item, index) in array" v-bind:key="index">
+        <p v-if="item.gender">Name is {{ item.name }} and gender is {{ item.gender ? 'male' : 'female' }}</p>
+      </div> -->
+
+      <!-- --------------------------------------------------------------------- -->
+
+      <!-- Lưu ý array -->
+      <div v-for="(item, index) in array" v-bind:key="index">
+        <p>{{ item }}</p>
+      </div>
+      <i>
+        Không thể gắn giá trị của phần tử array bằng phép gán "=".<br />
+        Nếu muốn thay đổi giá trị thì phải dùng hàm $set của Vue hoặc những hàm ở<br />
+        https://vi.vuejs.org/v2/guide/list.html#Phat-hien-thay-doi-trong-mang<br />
+        để VueJS có thể nhận biết sự thay đổi và render lại
+      </i><br />
+
+    </div>
+    
+    <!-- -------------------------------------------------------------------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
